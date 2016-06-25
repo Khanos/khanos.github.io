@@ -9,8 +9,7 @@ body {
     width: 900px;
     margin: 0 auto;
 }
-img .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto
+.centered {
+    text-align: center;
+    margin: 60px auto;
 }
