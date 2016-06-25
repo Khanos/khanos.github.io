@@ -1,0 +1,5 @@
+{
+  "disallowSpaceAfterCodeOperator": true,
+  "requireSpaceAfterCodeOperator": true,
+  "disallowClassAttributeWithStaticValue": true
+}

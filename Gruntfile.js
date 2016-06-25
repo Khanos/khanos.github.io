@@ -7,13 +7,14 @@ module.exports = function(grunt) {
                 livereload: true,
             },
             css: {
-                files: ['assets/css/*.css'],
+                files: ['src/assets/css/*.css'],
             },
             js: {
                 files: ['Gruntfile.js'],
             },
-            html: {
-                files: ['index.html'],
+            pug: {
+                files: ['src/views/*.pug'],
+                tasks: ['pug']
             }
         },
         connect: {
@@ -28,11 +29,22 @@ module.exports = function(grunt) {
                 }
             }
         },
+        pug: {
+            compile: {
+                options: {
+                    pretty: true,
+                },
+                files: {
+                    'index.html': 'src/views/*.pug'
+                }
+            }
+        }
     });
 
     // Grunts plugins
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-pug');
 
     // Default task(s).
     grunt.registerTask('default', 'Log something', function() {
@@ -40,6 +52,7 @@ module.exports = function(grunt) {
     });
 
     grunt.registerTask('server', [
+        'pug',
         'connect',
         'watch'
     ]);
