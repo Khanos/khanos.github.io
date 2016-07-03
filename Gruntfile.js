@@ -7,7 +7,8 @@ module.exports = function(grunt) {
                 livereload: true,
             },
             css: {
-                files: ['src/assets/css/*.css'],
+                files: ['src/sass/*.scss'],
+                tasks: ['sass']
             },
             js: {
                 files: ['Gruntfile.js'],
@@ -38,6 +39,13 @@ module.exports = function(grunt) {
                     'index.html': 'src/views/*.pug'
                 }
             }
+        },
+        sass: {
+            dist: {
+                files: {
+                    'assets/css/style.css': 'src/sass/style.scss'
+                }
+            }
         }
     });
 
@@ -45,6 +53,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-pug');
+    grunt.loadNpmTasks('grunt-contrib-sass');
 
     // Default task(s).
     grunt.registerTask('default', 'Log something', function() {
