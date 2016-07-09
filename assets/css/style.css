@@ -5,8 +5,33 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: white; }
 
+h1 {
+  font-weight: 500;
+  font-family: sans-serif;
+  color: purple;
+  text-transform: uppercase; }
+
+h1:hover {
+  background-color: black; }
+
+a:link {
+  color: grey; }
+
+a:hover {
+  color: red;
+  background-color: black; }
+
+p {
+  text-align: justify;
+  width: 480px;
+  height: auto;
+  background-color: grey;
+  padding: 60px;
+  border: 20px solid;
+  margin: 60px; }
+
 #site_content {
-  width: 900px;
+  max-width: 1200px;
   margin: 0 auto; }
 
 .centered {
