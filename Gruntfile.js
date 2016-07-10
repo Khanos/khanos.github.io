@@ -7,7 +7,7 @@ module.exports = function(grunt) {
                 livereload: true,
             },
             css: {
-                files: ['src/sass/*.scss'],
+                files: ['src/sass/*.sass'],
                 tasks: ['sass']
             },
             js: {
@@ -43,7 +43,7 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 files: {
-                    'assets/css/style.css': 'src/sass/style.scss'
+                    'assets/css/style.css': 'src/sass/style.sass'
                 }
             }
         }
