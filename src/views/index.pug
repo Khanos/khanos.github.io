@@ -1,10 +1,8 @@
 doctype html
 html(lang='es')
-    head
-        meta(charset='UTF-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1.0')
-        title Khanos
-        link(rel='stylesheet', type='text/css', href='assets/css/style.css')
+    include ./includes/head.pug
+    //- Yhis message is hide from the HTML
+    // This comment is showed in the HTML
     body
         .container
             header
@@ -14,11 +12,9 @@ html(lang='es')
                     .nav Test2
                     .nav test3
                     .nav test4
-            .main
-                img(src="assets/img/workspace.png", alt="")
-
-                h1 Hola, Soy Epilef
-                h3 Diseño y Desarrollo Web
+                .main
+                    h1 Hola, Soy Epilef
+                    h3 Diseño y Desarrollo Web
             .content
                 p.
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
