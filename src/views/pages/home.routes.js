@@ -1,12 +1,12 @@
 (function() {
     'use strict';
     angular
-        .module('pop.what')
+        .module('pop.home')
         .config(function($routeProvider) {
             $routeProvider
                 .when("/", {
-                    templateUrl: 'core/views/pages/partials/what.html',
-                    controller: 'whatCtrl',
+                    templateUrl: 'core/views/pages/partials/home.html',
+                    controller: 'homeCtrl',
                     controllerAs: 'vm'
                 });
         });

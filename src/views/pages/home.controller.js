@@ -1,12 +1,12 @@
 (function() {
     'use strict';
     angular
-        .module('pop.what')
-        .controller('whatCtrl', whatCtrl);
+        .module('pop.home')
+        .controller('homeCtrl', homeCtrl);
 
-    whatCtrl.$inject = [];
+    homeCtrl.$inject = [];
 
-    function whatCtrl() {
+    function homeCtrl() {
         /* jshint validthis: true */
         var vm = this;
         // Variables
