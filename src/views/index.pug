@@ -1,25 +1,7 @@
 doctype html
 html(lang='es')
     include ./includes/head.pug
-    body
-        .main-container
-            aside
-                .img-brand
-                    img(src="assets/img/main-brand.png")
-                p Tools of today will become obsolete, so don't learn the tools, learn the fundamentals
-                ol
-                    li
-                        a(href="#") What i do
-                            img.img-arrow(src="assets/img/arrow-right.png")
-                    li
-                        a(href="#") Who am i
-                            img.img-arrow(src="assets/img/arrow-right.png")
-                    li
-                        a(href="#")  How i do it
-                            img.img-arrow(src="assets/img/arrow-right.png")
-                    li
-                        a(href="#") Where am i
-                            img.img-arrow(src="assets/img/arrow-right.png")
-            section
-                p
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    body(ng-app='pop')
+        div(ng-view, ng-cloak)
+        include ./includes/vendors-js.pug
+        include ./includes/pop.pug

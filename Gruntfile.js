@@ -11,18 +11,23 @@ module.exports = function(grunt) {
                 tasks: ['sass']
             },
             js: {
-                files: ['Gruntfile.js'],
+                files: ['Gruntfile.js', 'src/**/*.js'],
+                tasks: ['newer:copy']
             },
             pug: {
                 files: ['src/views/**/*.pug'],
                 tasks: ['newer:pug']
+            },
+            bower: {
+                files: ['./bower.json'],
+                tasks:['assets']
             }
         },
         connect: {
             server: {
                 options: {
                     port: 9090,
-                    base: '.',
+                    base: './public',
                     hostname: 'localhost',
                     protocol: 'http',
                     livereload: true,
@@ -35,16 +40,37 @@ module.exports = function(grunt) {
                 options: {
                     pretty: true,
                 },
-                files: {
-                    'index.html': 'src/views/*.pug'
-                }
+                files: [{
+                    expand: true,
+                    cwd: './src/views',
+                    src: ['**/*.pug', '!includes/**', '!index.pug'],
+                    dest: 'public/core/views/',
+                    ext: '.html',
+                }, {
+                    './public/index.html': 'src/views/index.pug'
+                }]
             }
         },
         sass: {
             dist: {
                 files: {
-                    'assets/css/style.css': 'src/sass/style.sass'
+                    './public/assets/css/style.css': 'src/sass/style.sass'
                 }
+            }
+        },
+        copy: {
+            main: {
+                files: [
+                    // makes all src relative to cwd
+                    {expand: true, cwd: 'src', src: ['**/*.js'], dest: 'public/core'}
+                ],
+            },
+        },
+        bower: {
+            dev: {
+                dest: 'public/assets',
+                js_dest: 'public/assets/js',
+                css_dest: 'public/assets/css'
             }
         }
     });
@@ -55,14 +81,13 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-pug');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-newer');
-
-    // Default task(s).
-    grunt.registerTask('default', 'Log something', function() {
-        grunt.log.writeln('Excelente!');
-    });
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-bower');
 
     grunt.registerTask('server', [
         'pug',
+        'copy',
+        'bower',
         'connect',
         'watch'
     ]);
