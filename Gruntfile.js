@@ -16,7 +16,7 @@ module.exports = function(grunt) {
             },
             pug: {
                 files: ['src/views/**/*.pug'],
-                tasks: ['newer:pug']
+                tasks: ['pug']
             },
             bower: {
                 files: ['./bower.json'],
