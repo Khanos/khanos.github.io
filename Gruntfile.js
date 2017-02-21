@@ -7,15 +7,15 @@ module.exports = function(grunt) {
                 livereload: true,
             },
             css: {
-                files: ['src/sass/*.sass'],
+                files: ['src/sass/**/*.sass'],
                 tasks: ['sass']
             },
             js: {
                 files: ['Gruntfile.js'],
             },
             pug: {
-                files: ['src/views/*.pug'],
-                tasks: ['pug']
+                files: ['src/views/**/*.pug'],
+                tasks: ['newer:pug']
             }
         },
         connect: {
@@ -54,6 +54,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-pug');
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-newer');
 
     // Default task(s).
     grunt.registerTask('default', 'Log something', function() {
