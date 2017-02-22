@@ -26,3 +26,6 @@ bower_components
 
 # Sass cache
 .sass-cache
+
+# Pug
+*.html
