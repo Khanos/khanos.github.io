@@ -1,11 +1,12 @@
 
-<aside>
-  <div class="img-brand"><img src="assets/img/main-brand.png"/></div>
+<aside ng-class="asideStyle">
+  <div class="sidebar-toggle" ng-click="toggleAside()"><a href="#"> <img src="assets/img/menu-toggle.png"/></a></div>
+  <div class="brand"><img src="assets/img/main-brand.png"/></div>
   <div class="quote">
-    <p>Tools of today will become obsolete, so don't learn the tools, learn the fundamentals.</p>
+    <h2>Tools of today will become obsolete, so don't learn the tools, learn the fundamentals.</h2>
   </div>
   <ol>
-    <li><a href="#">Home<img class="img-arrow" src="assets/img/arrow-right.png"/></a></li>
+    <li ng-click="toggleAside()"><a href="/">Home<img class="img-arrow" src="assets/img/arrow-right.png"/></a></li>
     <li><a href="#">What i do<img class="img-arrow" src="assets/img/arrow-right.png"/></a></li>
     <li><a href="#">Who am i<img class="img-arrow" src="assets/img/arrow-right.png"/></a></li>
     <li><a href="#"> How i do it<img class="img-arrow" src="assets/img/arrow-right.png"/></a></li>
