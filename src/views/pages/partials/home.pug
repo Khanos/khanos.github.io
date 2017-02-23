@@ -1,6 +1,9 @@
 .main-container
     include ../../shared/aside.pug
     section.section-container.home
+        .sidebar-toggle(ng-click="toggleAside()")
+            a(href="#") 
+                img(src="assets/img/menu-toggle.png")
         .img-home
             img.img-notebook(src="assets/img/notebook.png")
         .main-title 
@@ -11,6 +14,7 @@
                 a.love(href="")  love 
                 | what i 
                 a.me(href="")  do
+            h1
             a.main-button(href="#") start
         footer.home-footer
             p

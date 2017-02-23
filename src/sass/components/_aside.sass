@@ -1,8 +1,8 @@
 aside
     background-color: $bg-aside
     width: 20%
-    min-width: 230px
-    height: 100vh
+    min-width: 260px
+    height: 100%
     align-self: stretch
     display: flex
     flex-direction: column
@@ -19,6 +19,7 @@ aside
         top: 5px
     .quote
         padding: 0px 10px
+        width: 100%
         flex-grow: 2
         display: flex
         align-items: center
@@ -48,3 +49,12 @@ aside
                 font-family: "Roboto-Thin", sans-serif
                 font-size: 1.8vw
                 font-weight: bold
+.showAside   
+    width: 70%
+    padding-top: 50px
+    transition: 0.5s
+    display: flex
+.hideAside   
+    width: 0
+    display: none
+ 
