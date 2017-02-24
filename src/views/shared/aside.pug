@@ -10,8 +10,8 @@ aside(ng-class="asideStyle")
         li(ng-click="toggleAside()")
             a(href="/") Home
                 img.img-arrow(src="assets/img/arrow-right.png")
-        li
-            a(href="#") What i do
+        li(ng-click="toggleAside()")
+            a(href="/what") What i do
                 img.img-arrow(src="assets/img/arrow-right.png")
         li
             a(href="#") Who am i

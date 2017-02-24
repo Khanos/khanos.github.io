@@ -66,7 +66,6 @@ section {
 aside {
   background-color: #FDFFFC;
   width: 20%;
-  min-width: 260px;
   height: 100%;
   align-self: stretch;
   display: flex;
@@ -178,15 +177,45 @@ aside {
       opacity: 1; }
   .section-container.home footer.home-footer {
     padding: 20px;
-    margin-left: 50vw; }
+    width: 100%; }
     .section-container.home footer.home-footer p {
       font-family: "Raleway", sans-serif;
       font-weight: 100;
-      color: #4D4444; }
+      color: #4D4444;
+      text-align: right; }
       .section-container.home footer.home-footer p a {
         text-decoration: none;
         color: #4D4444;
         font-weight: 600; }
+
+.section-container.what {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  overflow: scroll; }
+  .section-container.what .box {
+    margin: 5px;
+    width: 24.5%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    opacity: 0.5; }
+    .section-container.what .box img {
+      object-fit: fill;
+      max-width: 900px; }
+  .section-container.what .box.short {
+    height: 35vh; }
+  .section-container.what .box:hover {
+    -webkit-box-shadow: 0px 0px 2px 1px #F800AE;
+    -moz-box-shadow: 0px 0px 2px 1px #F800AE;
+    box-shadow: 0px 0px 2px 1px #F800AE;
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity 0.8s; }
 
 @media screen and (max-width: 700px) {
   h1 {
@@ -219,30 +248,33 @@ aside {
     aside img.img-arrow {
       width: 1rem; }
 
-  .section-container.home {
+  .section-container {
     width: 100%;
     height: 100vh; }
-    .section-container.home .sidebar-toggle {
+    .section-container .sidebar-toggle {
       display: block;
       padding: 10px !important;
       z-index: 1; }
-      .section-container.home .sidebar-toggle img {
+      .section-container .sidebar-toggle img {
         -webkit-box-shadow: 0px 0px 0.2px 1px #F800AE;
         -moz-box-shadow: 0px 0px 0.2px 1px #F800AE;
         box-shadow: 0px 0px 0.2px 1px #F800AE; }
-    .section-container.home .img-home {
+    .section-container .img-home {
       height: 0vh; }
-      .section-container.home .img-home img {
+      .section-container .img-home img {
         width: 68vw; }
-    .section-container.home .main-title a.main-button {
+    .section-container .main-title a.main-button {
       padding: 6px 50px; }
-    .section-container.home .main-title a.main-button:active {
+    .section-container .main-title a.main-button:active {
       -webkit-box-shadow: 0px 0px 2px 1px #F800AE;
       -moz-box-shadow: 0px 0px 2px 1px #F800AE;
       box-shadow: 0px 0px 2px 1px #F800AE; }
-    .section-container.home footer.home-footer {
+    .section-container footer.home-footer {
       margin-left: 0vh;
-      text-align: center; } }
+      text-align: center; }
+
+  .section-container.what .box {
+    opacity: 1; } }
 @media screen and (min-width: 701px) {
   aside {
     width: 20% !important;

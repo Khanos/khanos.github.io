@@ -6,6 +6,7 @@
             // Vendors
             'ngRoute',
             // Modules
-            'pop.home'
+            'pop.home',
+            'pop.what'
         ]);
 })();
