@@ -217,6 +217,57 @@ aside {
     cursor: pointer;
     transition: opacity 0.8s; }
 
+.section-container.who {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between; }
+  .section-container.who .profile-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center; }
+    .section-container.who .profile-img img {
+      width: 500px;
+      position: absolute;
+      bottom: -15px;
+      overflow: hidden; }
+  .section-container.who .profile-description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .section-container.who .profile-description .title {
+      width: 100%;
+      margin-bottom: 20px;
+      text-align: center; }
+      .section-container.who .profile-description .title h1 {
+        color: #FDFFFC;
+        letter-spacing: 5px; }
+      .section-container.who .profile-description .title h1.first-row span {
+        background-color: #4D4444;
+        position: relative;
+        right: 40px; }
+      .section-container.who .profile-description .title h1.first-row::first-letter {
+        color: #F800AE; }
+      .section-container.who .profile-description .title h1.second-row span {
+        background-color: #4D4444;
+        position: relative;
+        left: 40px; }
+      .section-container.who .profile-description .title h1.second-row::first-letter {
+        color: #F800AE; }
+    .section-container.who .profile-description .text {
+      width: 100%;
+      margin-bottom: 20px; }
+    .section-container.who .profile-description .social {
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      .section-container.who .profile-description .social .social-item img {
+        width: 100px; }
+
 @media screen and (max-width: 700px) {
   h1 {
     font-size: 1.6rem; }

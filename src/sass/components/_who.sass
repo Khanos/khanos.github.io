@@ -1,0 +1,53 @@
+.section-container.who        
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+    .profile-img
+        width: 50%
+        height: 100%
+        display: flex
+        justify-content: center
+        img
+            width: 500px
+            position: absolute
+            bottom: -15px
+            overflow: hidden
+    .profile-description
+        width: 50%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        .title
+            width: 100%
+            margin-bottom: 20px
+            text-align: center
+            h1
+                color: $bg-aside
+                letter-spacing: 5px
+            h1.first-row
+                span
+                    background-color: $button-border
+                    position: relative
+                    right: 40px
+            h1.first-row::first-letter
+                color: $accent
+            h1.second-row
+                span
+                    background-color: $button-border
+                    position: relative
+                    left: 40px
+            h1.second-row::first-letter
+                color: $accent
+        .text
+            width: 100%
+            margin-bottom: 20px
+        .social
+            width: 100%
+            display: flex
+            justify-content: center
+            .social-item
+                img
+                    width: 100px
