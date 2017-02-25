@@ -71,11 +71,29 @@ aside {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  aside .brand {
-    padding: 20px; }
-    aside .brand img {
-      max-height: 145px;
-      width: 100%; }
+  aside .title {
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-align: center; }
+    aside .title h1 {
+      color: #FDFFFC;
+      font-size: 2vw;
+      letter-spacing: 5px; }
+    aside .title h2 {
+      font-family: "Raleway", sans-serif;
+      font-size: 1.4vw;
+      letter-spacing: 5px; }
+    aside .title h1.first-row span {
+      background-color: #4D4444;
+      position: relative;
+      right: 20%; }
+    aside .title h1.second-row span {
+      background-color: #4D4444;
+      position: relative;
+      left: 10%; }
+    aside .title h1.second-row::first-letter {
+      color: #F800AE; }
   aside img.img-arrow {
     width: 0.8vw;
     margin-left: 8px;
@@ -217,6 +235,101 @@ aside {
     cursor: pointer;
     transition: opacity 0.8s; }
 
+.section-container.who {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between; }
+  .section-container.who .profile-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center; }
+    .section-container.who .profile-img img {
+      width: 30%;
+      position: absolute;
+      bottom: 0px; }
+  .section-container.who .profile-description {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section-container.who .profile-description .title {
+      width: 100%;
+      margin-top: 10%;
+      margin-bottom: 10%;
+      text-align: center; }
+      .section-container.who .profile-description .title h1 {
+        color: #FDFFFC;
+        letter-spacing: 5px; }
+      .section-container.who .profile-description .title h1.first-row span {
+        background-color: #4D4444;
+        position: relative;
+        right: 40px; }
+      .section-container.who .profile-description .title h1.second-row span {
+        background-color: #4D4444;
+        position: relative;
+        left: 40px; }
+      .section-container.who .profile-description .title h1.second-row::first-letter {
+        color: #F800AE; }
+    .section-container.who .profile-description .text {
+      width: 100%;
+      padding: 0% 5%;
+      margin-bottom: 10%; }
+      .section-container.who .profile-description .text p {
+        margin-bottom: 2%; }
+    .section-container.who .profile-description .social {
+      width: 60%;
+      display: flex;
+      justify-content: space-around; }
+      .section-container.who .profile-description .social .social-item {
+        border-radius: 100%;
+        width: 7vh;
+        height: 7vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #4D4444; }
+        .section-container.who .profile-description .social .social-item a {
+          border-radius: 100%;
+          color: #FDFFFC;
+          text-align: center; }
+          .section-container.who .profile-description .social .social-item a i {
+            border-radius: 100%; }
+      .section-container.who .profile-description .social .github:hover {
+        background-color: #FDFFFC;
+        transition: background-color 0.2s ease; }
+        .section-container.who .profile-description .social .github:hover a {
+          color: #171515;
+          transition: color 0.3s ease-in; }
+      .section-container.who .profile-description .social .linkedin:hover {
+        background-color: #FDFFFC;
+        transition: background-color 0.2s ease; }
+        .section-container.who .profile-description .social .linkedin:hover a {
+          color: #007ab9;
+          transition: color 0.3s ease-in; }
+      .section-container.who .profile-description .social .twitter:hover {
+        background-color: #FDFFFC;
+        transition: background-color 0.2s ease; }
+        .section-container.who .profile-description .social .twitter:hover a {
+          color: #1da1f2;
+          transition: color 0.3s ease-in; }
+      .section-container.who .profile-description .social .gplus:hover {
+        background-color: #FDFFFC;
+        transition: background-color 0.2s ease; }
+        .section-container.who .profile-description .social .gplus:hover a {
+          color: #dd5044;
+          transition: color 0.3s ease-in; }
+      .section-container.who .profile-description .social .rss:hover {
+        background-color: #FDFFFC;
+        transition: background-color 0.2s ease; }
+        .section-container.who .profile-description .social .rss:hover a {
+          color: #f8991d;
+          transition: color 0.3s ease-in; }
+
 @media screen and (max-width: 700px) {
   h1 {
     font-size: 1.6rem; }
@@ -232,13 +345,15 @@ aside {
     width: 70%;
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     top: 0;
     left: 0;
     overflow-x: hidden;
     transition: 0.5s; }
-    aside .brand img {
-      width: 50vw; }
+    aside .title h1 {
+      font-size: 4.2vh; }
+    aside .title h2 {
+      font-size: 2.6vh; }
     aside ol li a {
       font-size: 4vh; }
     aside .quote h2 {
@@ -254,7 +369,7 @@ aside {
     .section-container .sidebar-toggle {
       display: block;
       padding: 10px !important;
-      z-index: 1; }
+      z-index: 10; }
       .section-container .sidebar-toggle img {
         -webkit-box-shadow: 0px 0px 0.2px 1px #F800AE;
         -moz-box-shadow: 0px 0px 0.2px 1px #F800AE;
@@ -274,11 +389,61 @@ aside {
       text-align: center; }
 
   .section-container.what .box {
-    opacity: 1; } }
+    opacity: 1; }
+
+  .section-container.who {
+    flex-direction: row; }
+    .section-container.who .profile-img {
+      width: 100%;
+      height: 30%;
+      order: 2; }
+    .section-container.who .profile-description {
+      width: 100%;
+      height: 70%;
+      order: 1;
+      z-index: 1; }
+      .section-container.who .profile-description .social .social-item {
+        width: 6vh;
+        height: 6vh; }
+      .section-container.who .profile-description .social .github {
+        background-color: #FDFFFC;
+        transition: background-color 0.2s ease; }
+        .section-container.who .profile-description .social .github a {
+          color: #171515;
+          transition: color 0.3s ease-in; }
+      .section-container.who .profile-description .social .linkedin {
+        background-color: #FDFFFC;
+        transition: background-color 0.2s ease; }
+        .section-container.who .profile-description .social .linkedin a {
+          color: #007ab9;
+          transition: color 0.3s ease-in; }
+      .section-container.who .profile-description .social .twitter {
+        background-color: #FDFFFC;
+        transition: background-color 0.2s ease; }
+        .section-container.who .profile-description .social .twitter a {
+          color: #1da1f2;
+          transition: color 0.3s ease-in; }
+      .section-container.who .profile-description .social .gplus {
+        background-color: #FDFFFC;
+        transition: background-color 0.2s ease; }
+        .section-container.who .profile-description .social .gplus a {
+          color: #dd5044;
+          transition: color 0.3s ease-in; }
+      .section-container.who .profile-description .social .rss {
+        background-color: #FDFFFC;
+        transition: background-color 0.2s ease; }
+        .section-container.who .profile-description .social .rss a {
+          color: #f8991d;
+          transition: color 0.3s ease-in; }
+      .section-container.who .profile-description .social i {
+        font-size: 1rem; } }
 @media screen and (min-width: 701px) {
   aside {
     width: 20% !important;
     height: 100% !important;
-    display: flex !important; } }
+    display: flex !important; }
+
+  .showAside {
+    padding-top: 0px; } }
 
 /*# sourceMappingURL=style.css.map */

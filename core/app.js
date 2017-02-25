@@ -7,6 +7,7 @@
             'ngRoute',
             // Modules
             'pop.home',
-            'pop.what'
+            'pop.what',
+            'pop.who'
         ]);
 })();
