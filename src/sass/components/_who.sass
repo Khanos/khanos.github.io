@@ -10,19 +10,19 @@
         display: flex
         justify-content: center
         img
-            width: 500px
+            width: 30%
             position: absolute
-            bottom: -15px
-            overflow: hidden
+            bottom: 0px
     .profile-description
         width: 50%
+        height: 100%
         display: flex
         flex-direction: column
         align-items: center
-        justify-content: center
         .title
             width: 100%
-            margin-bottom: 20px
+            margin-top: 10%
+            margin-bottom: 10%
             text-align: center
             h1
                 color: $bg-aside
@@ -32,8 +32,6 @@
                     background-color: $button-border
                     position: relative
                     right: 40px
-            h1.first-row::first-letter
-                color: $accent
             h1.second-row
                 span
                     background-color: $button-border
@@ -43,11 +41,56 @@
                 color: $accent
         .text
             width: 100%
-            margin-bottom: 20px
+            padding: 0% 5%
+            margin-bottom: 10%
+            p
+                margin-bottom: 2%
         .social
-            width: 100%
+            width: 60%
             display: flex
-            justify-content: center
+            justify-content: space-around
             .social-item
-                img
-                    width: 100px
+                border-radius: 100%
+                width: 7vh
+                height: 7vh
+                overflow: hidden
+                display: flex
+                justify-content: center
+                align-items: center
+                background-color: $button-border
+                a
+                    border-radius: 100%
+                    color: $bg-aside
+                    text-align: center
+                    i
+                        border-radius: 100%
+            .github:hover
+                background-color: $bg-aside
+                transition: background-color 0.2s ease
+                a
+                    color: $social-github-alt
+                    transition: color 0.3s ease-in
+            .linkedin:hover
+                background-color: $bg-aside
+                transition: background-color 0.2s ease
+                a 
+                    color: $social-linkedin
+                    transition: color 0.3s ease-in
+            .twitter:hover
+                background-color: $bg-aside
+                transition: background-color 0.2s ease
+                a 
+                    color: $social-twitter
+                    transition: color 0.3s ease-in
+            .gplus:hover
+                background-color: $bg-aside
+                transition: background-color 0.2s ease
+                a 
+                    color: $social-gplus
+                    transition: color 0.3s ease-in
+            .rss:hover
+                background-color: $bg-aside
+                transition: background-color 0.2s ease
+                a 
+                    color: $social-rss
+                    transition: color 0.3s ease-in

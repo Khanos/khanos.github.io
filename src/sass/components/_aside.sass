@@ -6,11 +6,31 @@ aside
     display: flex
     flex-direction: column
     align-items: center
-    .brand
-        padding: 20px
-        img
-            max-height: 145px
-            width: 100%
+    .title
+        width: 100%
+        margin-top: 10%
+        margin-bottom: 10%
+        text-align: center
+        h1
+            color: $bg-aside
+            font-size: 2vw
+            letter-spacing: 5px
+        h2
+            font-family: "Raleway", sans-serif
+            font-size: 1.4vw
+            letter-spacing: 5px
+        h1.first-row
+            span
+                background-color: $button-border
+                position: relative
+                right: 20%
+        h1.second-row
+            span
+                background-color: $button-border
+                position: relative
+                left: 10%
+        h1.second-row::first-letter
+            color: $accent
     img.img-arrow
         width: 0.8vw
         margin-left: 8px

@@ -10,14 +10,16 @@
         width: 70%
         display: none
         position: fixed
-        z-index: 1
+        z-index: 10
         top: 0
         left: 0
         overflow-x: hidden
         transition: 0.5s
-        .brand
-            img
-                width: 50vw
+        .title
+            h1
+                font-size: 4.2vh
+            h2
+                font-size: 2.6vh
         ol li a
             font-size: 4vh
         .quote h2
@@ -32,7 +34,7 @@
         .sidebar-toggle
             display: block
             padding: 10px !important
-            z-index: 1
+            z-index: 10
             img
                 -webkit-box-shadow: 0px 0px 0.2px 1px $accent
                 -moz-box-shadow: 0px 0px 0.2px 1px $accent
@@ -54,9 +56,58 @@
     .section-container.what
         .box
             opacity: 1
+    .section-container.who
+        flex-direction: row
+        .profile-img
+            width: 100%
+            height: 30%
+            order: 2
+        .profile-description
+            width: 100%
+            height: 70%
+            order: 1
+            z-index: 1
+            .social 
+                .social-item
+                    width: 6vh
+                    height: 6vh
+                .github
+                    background-color: $bg-aside
+                    transition: background-color 0.2s ease
+                    a
+                        color: $social-github-alt
+                        transition: color 0.3s ease-in
+                .linkedin
+                    background-color: $bg-aside
+                    transition: background-color 0.2s ease
+                    a 
+                        color: $social-linkedin
+                        transition: color 0.3s ease-in
+                .twitter
+                    background-color: $bg-aside
+                    transition: background-color 0.2s ease
+                    a 
+                        color: $social-twitter
+                        transition: color 0.3s ease-in
+                .gplus
+                    background-color: $bg-aside
+                    transition: background-color 0.2s ease
+                    a 
+                        color: $social-gplus
+                        transition: color 0.3s ease-in
+                .rss
+                    background-color: $bg-aside
+                    transition: background-color 0.2s ease
+                    a 
+                        color: $social-rss
+                        transition: color 0.3s ease-in
+            .social i
+                font-size: 1rem   
 
 @media screen and (min-width:701px)
     aside
         width: 20% !important
         height: 100% !important
         display: flex !important
+    .showAside   
+        padding-top: 0px
