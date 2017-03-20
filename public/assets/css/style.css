@@ -112,6 +112,9 @@ aside {
       line-height: 1.6;
       color: #95989A;
       opacity: 0.8; }
+      aside .quote h2 a {
+        text-decoration: none;
+        color: #F800AE; }
     aside .quote h2::first-letter {
       font-size: 3.2rem;
       font-weight: bolder; }
@@ -247,7 +250,7 @@ aside {
     display: flex;
     justify-content: center; }
     .section-container.who .profile-img img {
-      width: 30%;
+      width: 40%;
       position: absolute;
       bottom: 0px; }
   .section-container.who .profile-description {
@@ -259,7 +262,7 @@ aside {
     .section-container.who .profile-description .title {
       width: 100%;
       margin-top: 10%;
-      margin-bottom: 10%;
+      margin-bottom: 5%;
       text-align: center; }
       .section-container.who .profile-description .title h1 {
         color: #FDFFFC;
@@ -277,9 +280,10 @@ aside {
     .section-container.who .profile-description .text {
       width: 100%;
       padding: 0% 5%;
-      margin-bottom: 10%; }
+      margin-bottom: 5%; }
       .section-container.who .profile-description .text p {
-        margin-bottom: 2%; }
+        margin-bottom: 2%;
+        font-weight: 100; }
     .section-container.who .profile-description .social {
       width: 60%;
       display: flex;
@@ -300,31 +304,26 @@ aside {
           .section-container.who .profile-description .social .social-item a i {
             border-radius: 100%; }
       .section-container.who .profile-description .social .github:hover {
-        background-color: #FDFFFC;
         transition: background-color 0.2s ease; }
         .section-container.who .profile-description .social .github:hover a {
           color: #171515;
           transition: color 0.3s ease-in; }
       .section-container.who .profile-description .social .linkedin:hover {
-        background-color: #FDFFFC;
         transition: background-color 0.2s ease; }
         .section-container.who .profile-description .social .linkedin:hover a {
           color: #007ab9;
           transition: color 0.3s ease-in; }
       .section-container.who .profile-description .social .twitter:hover {
-        background-color: #FDFFFC;
         transition: background-color 0.2s ease; }
         .section-container.who .profile-description .social .twitter:hover a {
           color: #1da1f2;
           transition: color 0.3s ease-in; }
       .section-container.who .profile-description .social .gplus:hover {
-        background-color: #FDFFFC;
         transition: background-color 0.2s ease; }
         .section-container.who .profile-description .social .gplus:hover a {
           color: #dd5044;
           transition: color 0.3s ease-in; }
       .section-container.who .profile-description .social .rss:hover {
-        background-color: #FDFFFC;
         transition: background-color 0.2s ease; }
         .section-container.who .profile-description .social .rss:hover a {
           color: #f8991d;

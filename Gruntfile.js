@@ -19,8 +19,7 @@ module.exports = function(grunt) {
                 tasks: ['pug']
             },
             bower: {
-                files: ['./bower.json'],
-                tasks:['assets']
+                files: ['./bower.json']
             }
         },
         connect: {
