@@ -8,6 +8,7 @@
             // Modules
             'pop.home',
             'pop.what',
-            'pop.who'
+            'pop.who',
+            'pop.how'
         ]);
 })();
