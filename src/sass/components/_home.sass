@@ -18,17 +18,20 @@
         font-weight: 100
         color: $font-section
         text-align: center
+        width: 100%
         .love
             font-family: "Roboto", sans-serif
-            font-weight: bolder
+            font-weight: 600
             font-style: italic
             text-decoration: none
+            padding: 5px
         .me
             color: $accent
             font-family: "Roboto", sans-serif
-            font-weight: bolder
+            font-weight: 600
             font-style: italic
             text-decoration: none
+            padding: 5px
         a.main-button
             border: solid 2px $button-border
             padding: 8px 80px
@@ -49,6 +52,57 @@
             -moz-box-shadow: 0px 0px 2px 1px $accent
             box-shadow: 0px 0px 2px 1px $accent
             opacity: 1
+        h4
+            font-weight: 100
+        .social
+            padding: 30px
+            display: flex
+            justify-content: center
+            align-items: center
+            .social-item
+                margin: 5px
+                border-radius: 100%
+                width: 7vh
+                height: 7vh
+                overflow: hidden
+                display: flex
+                justify-content: center
+                align-items: center
+                background-color: $button-border
+                a
+                    border-radius: 100%
+                    color: $bg-aside
+                    text-align: center
+                    i
+                        border-radius: 100%
+            .linkedin:hover
+                transition: background-color 0.2s ease
+                a
+                    color: $social-linkedin
+                    transition: color 0.3s ease-in
+            .twitter:hover
+                transition: background-color 0.2s ease
+                a
+                    color: $social-twitter
+                    transition: color 0.3s ease-in
+            .instagram:hover
+                transition: background-color 0.2s ease
+                a
+                    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)
+                    -webkit-background-clip: text
+                    background-clip: text
+                    -webkit-text-fill-color: transparent
+                    transition: color 0.3s ease-in
+            .hackerrank:hover
+                transition: background-color 0.2s ease
+                a
+                    color: $social-hackerrank
+                    transition: color 0.3s ease-in
+            .github:hover
+                transition: background-color 0.2s ease
+                a
+                    color: $social-github-alt
+                    transition: color 0.3s ease-in
     footer.home-footer
         padding: 20px
         width: 100%
@@ -61,3 +115,4 @@
                 text-decoration: none
                 color: $font-section
                 font-weight: 600
+                padding: 5px

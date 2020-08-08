@@ -1,24 +1,37 @@
 .main-container
-    include ../../shared/aside.pug
     section.section-container.home
-        .sidebar-toggle(ng-click="toggleAside()")
-            a(href="#") 
-                img(src="assets/img/menu-toggle.png")
         .img-home
             img.img-notebook(src="assets/img/notebook.png")
-        .main-title 
+        .main-title
             h1
-                | Hi, i am a full stack web developer.
+                | This is a fully redesign in progress.
+            h4
+                | Wanna
+                span.love check
+                | the
+                span.me progress
+                | ?
             h1
-                | and i
-                a.love(href="")  love 
-                | what i 
-                a.me(href="")  do
-            h1
-            a.main-button(href="#") start
+            a.main-button(href="https://trello.com/b/KdkP1DtZ" target="_blank") here
+            .social
+                .social-item.linkedin
+                    a(href="https://www.linkedin.com/in/khanos/", target="_blank")
+                        i.fa.fa-linkedin.fa-2x(aria-hidden='true')
+                .social-item.twitter
+                    a(href="https://twitter.com/KhanosTech", target="_blank")
+                        i.fa.fa-twitter.fa-2x(aria-hidden='true')
+                .social-item.instagram
+                    a(href="https://www.instagram.com/epilef.js", target="_blank")
+                        i.fa.fa-instagram.fa-2x(aria-hidden='true')
+                .social-item.hackerrank
+                    a(href="https://www.hackerrank.com/KhanosVe", target="_blank")
+                        i.fa.fa-code.fa-2x(aria-hidden='true')
+                .social-item.github
+                    a(href="https://github.com/Khanos", target="_blank")
+                        i.fa.fa-github-alt.fa-2x(aria-hidden='true')
         footer.home-footer
             p
-                | shared on 
-                a(href="https://github.com/Khanos/khanos.github.io", target="_blank") GitHub   
-                | & managed on 
+                | shared on
+                a(href="https://github.com/Khanos/khanos.github.io", target="_blank") GitHub
+                | & managed on
                 a(href="https://trello.com/b/KdkP1DtZ", target="_blank") Trello
