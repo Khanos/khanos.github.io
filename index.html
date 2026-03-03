@@ -1,42 +1,125 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
-    <base href="/">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <mets name="description" content="Epilef Rodriguez personal website slash portafolio, i'm a designer and developer for the web also called full stack web developer"></mets>
-    <link rel="author" href="https://www.linkedin.com/in/khanos/">
-    <meta itemprop="name" content="Design and Development">
-    <meta itemprop="description" content="Epilef Rodriguez personal website slash portafolio, i'm a designer and developer for the web also called full stack web developer">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@KhanosTech">
-    <meta name="twitter:title" content="Web design and development">
-    <meta name="twitter:description" content="Epilef Rodriguez personal website slash portafolio, i'm a designer and developer for the web also called full stack web developer">
-    <meta name="twitter:creator" content="@KhanosTech">
-    <meta property="og:title" content="Design and Development">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://khanos.github.io">
-    <meta property="og:description" content="Epilef Rodriguez personal website slash portafolio, i'm a designer and developer for the web also called full stack web developer">
-    <meta property="og:site_name" content="Khanos">
-    <meta property="article:published_time" content="2017-01-01T05:59:00+01:00">
-    <meta property="article:modified_time" content="2017-02-01T19:08:47+01:00">
-    <meta property="article:section" content="Article Section">
-    <meta property="article:tag" content="tech web fronend development angular javascript html css sass pug grunt">
-    <title>Design and Development</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Epilef Rodriguez (Khanos) — Senior Frontend Engineer building fast, accessible and maintainable web products."
+    />
+    <meta name="author" content="Epilef Rodriguez" />
+    <meta property="og:title" content="Khanos — Senior Frontend Engineer" />
+    <meta
+      property="og:description"
+      content="Senior Frontend Engineer focused on performance, accessibility, and product quality."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://khanos.github.io" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Khanos — Senior Frontend Engineer" />
+    <meta
+      name="twitter:description"
+      content="Senior Frontend Engineer focused on performance, accessibility, and product quality."
+    />
+    <title>Khanos — Senior Frontend Engineer</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body ng-app="pop">
-    <div ng-view ng-cloak></div>
-    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async="" defer=""></script>
-    <script type="text/javascript" src="assets/js/angular.js"></script>
-    <script type="text/javascript" src="assets/js/angular-route.js"></script>
-    <!-- Pop app Imports-->
-    <script type="text/javascript" src="core/app.js"></script>
-    <!-- Section - Home-->
-    <script type="text/javascript" src="core/views/pages/home.module.js"></script>
-    <script type="text/javascript" src="core/views/pages/home.controller.js"></script>
-    <script type="text/javascript" src="core/views/pages/home.routes.js"></script>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="#home" aria-label="Homepage">Khanos</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section id="home" class="section hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">Senior Frontend Engineer</p>
+          <h1 id="hero-title">I build fast and reliable user experiences.</h1>
+          <p class="lead">
+            I’m Epilef Rodriguez, focused on performant interfaces, strong frontend
+            architecture, and accessible design systems.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://github.com/Khanos" target="_blank" rel="noreferrer">View GitHub</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/khanos/" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section" aria-labelledby="about-title">
+        <div class="section-heading">
+          <h2 id="about-title">About</h2>
+        </div>
+        <div class="about-grid">
+          <p>
+            I design and implement maintainable frontend systems using modern
+            JavaScript/TypeScript ecosystems. My approach prioritizes clarity,
+            performance budgets, and long-term maintainability.
+          </p>
+          <ul class="highlights" aria-label="Core strengths">
+            <li>Component architecture and code quality</li>
+            <li>Accessibility by default (WCAG-minded)</li>
+            <li>Performance tuning and Core Web Vitals</li>
+            <li>Cross-functional collaboration with product teams</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="work" class="section" aria-labelledby="work-title">
+        <div class="section-heading">
+          <h2 id="work-title">Selected Work</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>GitHub Profile</h3>
+            <p>Open-source projects, experiments, and active repositories.</p>
+            <a href="https://github.com/Khanos" target="_blank" rel="noreferrer">Explore repositories</a>
+          </article>
+          <article class="card">
+            <h3>This Website</h3>
+            <p>Source code for this page, optimized for simplicity and speed.</p>
+            <a href="https://github.com/Khanos/khanos.github.io" target="_blank" rel="noreferrer">View source code</a>
+          </article>
+          <article class="card">
+            <h3>HackerRank</h3>
+            <p>Algorithm practice and coding challenge profile.</p>
+            <a href="https://www.hackerrank.com/KhanosVe" target="_blank" rel="noreferrer">See profile</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section" aria-labelledby="contact-title">
+        <div class="section-heading">
+          <h2 id="contact-title">Contact</h2>
+        </div>
+        <p class="contact-copy">
+          If you’re building a product and need senior frontend ownership,
+          let’s talk.
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="mailto:hello@khanos.dev">Send Email</a>
+          <a class="btn btn-secondary" href="https://twitter.com/KhanosTech" target="_blank" rel="noreferrer">Follow on X/Twitter</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year">2026</span> Epilef Rodriguez · Built as a fast static site.</p>
+    </footer>
   </body>
 </html>
